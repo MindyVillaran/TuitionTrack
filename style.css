@@ -1,0 +1,814 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {text-decoration: none;
+	color: gray;}
+
+/*--------------------------------------------------MENU/STRUCTURE---------------------------------------------------------*/
+
+
+#sidebar {background-color:white;
+	position: fixed;
+	width:20%;
+	height: 100%;
+	display: block;
+	border-right: 2px solid  #f2f2f2;
+	z-index: 300000000000;}
+	
+.logo-sidebar {width:55%;
+	display: block;
+	text-align: center;
+	padding: 140px 0px 30px 0px;
+	border-bottom: 1px solid lightgray;
+	margin-bottom:10%;
+	margin: 0 auto;  } 
+
+#introtag {margin-top:20px;}	
+	
+.reg {
+	font-family: gotham-light;
+	font-size: 16px;
+	display: block;
+	text-align: center;
+	padding: 20px;}	
+	
+.current {color: #3f90a5;
+	font-family: gotham-book;}
+
+.reg:hover {color:#7cc0b9;
+	font-family: gotham-book;}
+
+.site-container {
+	width:80%;
+	float: right;
+	overflow: hidden;}
+
+#back-to-top {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	border: none;
+	padding: 10px;
+	background-color: black;
+	color: white;
+	border-radius: 5px;
+	display:none;}
+
+
+/*--------------------------------------- top-nav ----------------------------------------*/
+
+
+.logo {position: absolute;
+	left: 20px;
+	top: 18px;
+	font: 20px gotham-light;
+	color: gray;}
+
+header{
+	width:100%; 
+	background:white; 
+	height:50px; 
+	line-height:50px;
+	border-bottom:3px solid  #f2f2f2;
+    display: none;}
+	
+.hamburger, .cross{
+	background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:0px 15px 0px 15px;
+  color:gray;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  z-index:10000000000000;
+}
+.cross{
+  font-size:3em;
+  line-height:65px;
+}
+
+.menu{z-index:1000000; font-size:0.8em; width:100%; background:white;  position:absolute; text-align:left;}
+
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+
+.menu li {display: block;   padding:10px 0 10px 0; border-bottom:#e6e6e6 1px solid; }
+.menu h3 {font-family: gotham-light; padding-left: 20px; font-size:16px; color: gray;}
+
+.menu li:hover{display: block; background:#cccccc; padding:10px 0 10px 0; border-bottom:none}
+.menu h3:hover {color: white;}
+
+
+.menu ul li a { text-decoration:none;  margin: 0px; color:#fff;}
+.menu ul li a:hover {  color: #fff; text-decoration:none;}
+
+.menu a{text-decoration:none; color:white;}
+.menu a:hover{text-decoration:none; color:white;}
+
+/*----------------------------------------------------------font styles-------------------------------------------------------*/
+
+  @font-face {
+      font-family: Klinic-Light;
+      src: url(Klinic-Slab/KlinicSlabLight.otf);} 
+
+  @font-face {
+      font-family: Klinic-Light-It;
+      src: url(Klinic-Slab/KlinicSlabLightIt.otf);}  
+
+@font-face {
+      font-family: Klinic-Book;
+      src: url(Klinic-Slab/KlinicSlabBook.otf);} 
+
+  @font-face {
+      font-family: Klinic-Med;
+      src: url(Klinic-Slab/KlinicSlabMedium.otf);} 
+
+  @font-face {
+      font-family: Klinic-Med-It;
+      src: url(Klinic-Slab/KlinicSlabMediumIt.otf);} 
+
+ /*-----------------gotham---------------*/
+
+  @font-face {
+      font-family: Gotham-XLight;
+      src: url(Gotham/GothamHTF-XLight.ttf);} 
+	  
+  @font-face {
+      font-family: Gotham-Light;
+      src: url(Gotham/GothamHTF-Light.ttf);} 
+	
+  @font-face {
+      font-family: Gotham-Book;
+      src: url(Gotham/GothamHTF-Book.ttf);} 
+
+  @font-face {
+      font-family: Gotham-Med;
+      src: url(Gotham/GothamHTF-Medium.ttf);} 
+
+  @font-face {
+      font-family: Gotham-Bold;
+      src: url(Gotham/GothamHTF-Bold.ttf);} 
+
+
+  body { font-family: Klinic-Book; 
+  	font-size:20px; 
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;}
+
+h1 {font-family: Gotham-Light; 
+	  color:white;
+      letter-spacing: 1.5px;
+  	font-size:55px; 	
+}
+
+h4 {font-family: Gotham-XLight; 
+	  color:white;
+      letter-spacing: 1.5px;
+  	font-size:20px;
+	margin-top:15px; 	
+}		
+
+	
+  h2 {font-family: Gotham-Light; 
+  	font-size:45px;
+	 line-height: 1.2em;
+ 	margin-bottom: 10px;}
+	
+h6 {font-family: klinic-med-it;
+	font-size: 1.5em;
+    letter-spacing: .5px;
+	text-align: center;}
+	
+
+h5 {font-family: gotham-light;
+font-size:20px;
+color: gray}
+
+/*-------------------------------------------------------dividers/sections---------------------------------------------------------------*/
+  
+  
+.blue {background-color:  #7cc0b9;}
+.white {background-color:  #ffffff;}
+.green {background-color: #8bc53f;}
+.dk-blue {background-color: #1f3668;}
+.teal {background-color: #3f90a5;} 
+.lt-green {background-color: #dfedcc;}
+.gray {background-color:#6d6e70;}
+
+
+.container, .container2 {
+	max-width:900px;
+	width:80%; 
+	position:relative;
+	margin: 0 auto;
+	padding: 20px;} 
+
+#why{padding-bottom: 400px;}
+
+.pagefull {
+  min-height: 100vh;
+  width: 100%;}
+	
+.page {
+  min-height: 100vh;
+  width: 100%;}
+
+
+/*--------------------------------------------------------styles and arrivals------------------------------------------------------------*/
+	
+	
+.blue-text {color: #3f90a5;}
+.white-text {color: white;}	
+.gray-text {color: #58595b;}
+
+.title {
+	  position:relative;
+	  text-align: center;
+	  display:block;
+	  width: 60%;
+	  top: 40vh;
+	  margin: 0 auto;
+      opacity:0;}
+
+.title-top {
+	  position:relative;
+	  text-align: center;
+	  display:block;
+	  width: 90%;
+	  top: 10vh;
+	  margin: 0 auto;
+      opacity:0;}
+	  	  
+.title-arrived {
+	opacity:1;
+ 	-webkit-transition: opacity 2s ease-in-out;} 
+
+	
+/*--------------------images/text-----------------------*/
+				
+.left-text {float:left;
+	  width:45%;
+	  margin-top: 150px;
+	  line-height:1.5em;
+	  position:relative;
+	  -webkit-transform: translate(-200vw, 0);
+      opacity:0;}   
+	  
+.Left-title-text {float:left;
+	  width:95%;
+	  margin-top: 50px;
+	  line-height:1.5em;
+	  position:relative;
+	  -webkit-transform: translate(-200vw, 0);
+      opacity:0;}
+
+.right-image {position:absolute;
+	  width:60%;
+	  top: 100px;
+	  right: -5%;
+	  -webkit-transform: translate(200vw, 0);
+      opacity:0;} 
+
+.right-text {float:right;
+	  width:38%;
+	  margin-top: 30vh;
+	  margin-right: -13px;
+	  line-height:1.5em;
+	  position:relative;
+	  -webkit-transform: translate(200vw, 0);
+      opacity:0;}  
+	  
+.FLOATright-text {float:left;
+	  width:38%;
+	  margin-top: 80px;
+	  margin-right: -13px;
+	  line-height:1.5em;
+	  position:relative;
+	  -webkit-transform: translate(200vw, 0);
+      opacity:0;} 
+
+.left-image {position:absolute;
+	  width:60%;
+	  top: 100px;
+	  left: -5%;
+	  -webkit-transform: translate(-200vw, 0);
+      opacity:0;}	
+
+/*--------------------images/text arrivals-------------------*/
+	
+.left-text-arrived, .left-image-arrived {
+	-webkit-transform: translate(0,0);
+    -webkit-transition: transform 2s ease-out; 
+      opacity:1;}
+	
+.right-text-arrived, .right-image-arrived {
+	-webkit-transform: translate(0,0);
+    -webkit-transition: transform 2s ease-out; 
+	opacity:1;
+}  
+
+.right-image-arrived {
+	-webkit-transform: translate(10vh,0);
+} 	
+		
+
+/*--------------------------------------------------------specific pages------------------------------------------------------------*/
+
+		
+		
+/*----------------------title page---------------------------*/
+
+#coinvid {
+	min-width:100%;
+	min-height:100vh;
+	position: absolute;
+	top:0; left:0;
+	z-index: -100;
+    background-size: cover; 
+    -webkit-background-size: cover; 
+    -o-background-size: cover;
+    -moz-background-size: cover;
+}
+
+.arrow {position: absolute;
+	bottom: 40px;
+	display: block;
+	left:48%;
+	right:48%;
+	height:40px;
+	animation:vibb 1s linear infinite;
+	-webkit-animation:vibb 1s linear infinite;	
+	-moz-animation:vibb 1s linear infinite;
+}	
+ 
+@-webkit-keyframes vibb {
+       0% {-webkit-transform: translate(0, 1vh);}
+	   50% {-webkit-transform: translate(0, 0); opacity:.5;}
+       100% {-webkit-transform: translate(0, 1vh);}}
+
+#title {position: relative;
+	overflow: hidden;}
+	
+.firstpage {background-color: #51c0b5;
+	position:absolute;
+	width: 100%;
+	min-height: 100vh;
+	opacity: .6;}	
+
+
+/*---------------page 1 (who we are)--------------------*/	   
+	
+#page1 {position: relative; 
+	min-height: 600px;
+	padding-bottom:6vh;
+}		
+
+/*---------------page 2(OurGoals)--------------------*/
+
+#page2, #pageBrand, #colorPage, #credit {position: relative;}
+
+/*---------------page 3 (quote)--------------------*/
+
+#page3, #quote2 {background-image: url("assets/quote-page/bg.png");
+	    background-repeat: no-repeat;
+	    background-size: cover;
+		position: relative;
+	    background-attachment:fixed;}
+
+
+.accent-left {position: absolute;
+		left: -10px;
+		bottom: 40px;
+		width: 10%;
+		min-width:50px;
+		max-width:65px;
+	}
+		
+.accent-right {position: absolute;
+		right: -5px;
+		top: 20px;
+		width: 50px;}	
+
+/*---------------page 4 (helping-students)--------------------*/		
+
+#page4 {min-height: 550px;
+	position: relative;
+	overflow: hidden;}
+   
+.bubbles-container {
+	width:80%;
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 20vh;
+    position:relative;
+	opacity: 0;
+}
+
+.bubbles-container-arrived{
+	opacity: 1;
+	-webkit-transition: opacity 3s ease;
+}
+
+.bubble-holder {
+	position: relative;
+	width: 33%;
+	float: left;
+	padding-bottom: 50px;}
+
+.icon {height:100px;}
+	
+.icon:hover {
+	-webkit-transform: scale(1.2);}
+	
+.caption {
+	display: block;
+	margin-top: 30px;
+	padding: 0 25% 0 25%;
+	width: 120px;
+	text-align: center;
+	font-size: 15px;
+	line-height:1.2em;
+	font-family: gotham-book;}
+	
+.hovertext {display: none;
+	margin-top: 20px;
+	color: white;
+	width: 190px;
+	text-align: center;
+	font-size: 15px;
+	line-height:1.2em;
+	font-family: gotham-book;} 
+
+.accent-tLeft {position: absolute;
+		left: -10px;
+		top: 40px;
+		width:60px;}
+		
+.accent-bRight {position: absolute;
+		right: 15px;
+		bottom: -30px;
+		width: 170px;}
+
+.label	{font-family:klinic-med-it;
+	color: white;
+	margin-top: 35px;
+	width: 100%;}	
+
+
+/*---------------pageVid(video)--------------------*/
+
+#pageVid {min-height: 20vh;}
+
+#vid {width: 100%; 
+	position: relative;
+	margin: 4% 0%;
+	border:1px solid  #e6e6e6 ;} 
+	
+
+
+/*---------------pageLogo--------------------*/
+
+#pageLogo, #pageRespLogo {min-height: 600px;}
+
+#logo-box {margin-top: 30px;}
+
+.smallLeftImage {float: left;
+	width: 30%;
+  	margin-top: 80px;
+	padding: 0px 10% 0 7% }	 
+
+.columns{float: left; 
+	padding-left: 8%;
+	width: 40%}	 
+	
+.labellogo, .labellogo2	{font-family:klinic-med-it;
+	color: gray;
+	margin-top: 5px;
+	width: 100%;
+	display: block;
+	text-align: center;}
+	
+.labellogo2	{text-align: left;}	
+
+.lillogo {width: 100%;
+	display: block;
+	margin: 0 auto;}
+	
+.lillogo2 {
+	width: 100%;
+	padding: 85px 0 0 0 ;
+	display: block;
+	margin: 0 auto;
+	text-align: center;}
+	
+
+#pageIcons, #pageType {position:relative;
+	width:100%;
+	min-height: 700px;
+	height:100%;
+	margin-left: auto;
+	margin-right:auto;
+	overflow:hidden;} 
+	
+.captionRespLogo {text-align: center;}
+
+
+.full-image	{width:90%;
+	display:block;
+	margin: 0 auto;	
+	padding:60px 0px 60px 0;}
+		
+.columnpic {height:100px;
+	display:block;
+	margin: 0 auto;}
+	
+#spaceabove {margin-top: 70px;
+	padding-top: 30px;
+	border-top: 1px solid gray;}	
+
+#restofLogo	{min-height: 230vh;}
+	
+	
+		
+	
+/*---------------SYSTEM--------------------*/
+
+.columns3, .columns4, .columns5, .columns2,  .columns7 {
+	margin-top: 50px; float: left; 
+	padding-left: 3%;
+	width: 26%}	
+	
+.columns2, .columns7 {margin-bottom:120px; width: 30%}
+	
+.columns4, .columns5{ padding-left: 6%;
+}
+
+.icongrid {float: left; 
+	padding: 20px;
+	max-height: 150px;}	
+
+.textcapt, .textcapt3 {font-family: gotham-book;
+	font-size: .8em;
+	line-height: 1.2em;
+	padding-top: 10px;
+	border-top: 1px solid white;}  
+
+.textcapt3 {text-align: center;}
+	
+
+.textcapt2 {font-family: gotham-book;
+	font-size: .65em;
+	line-height: 1.5em;
+	padding-top: 10px;
+	border-top: 1px solid gray;
+	margin-top: 120px;}
+	
+.color-swatch {width:120px;
+	height:120px;
+	border-radius: 60px;
+	display: block;}
+	
+
+
+/*---------------APPLICATIONS--------------------*/
+
+#applications { position: relative;}	
+
+.application {max-height:90vh;
+	width: auto;
+    -webkit-transform: translate(200vw, 0);
+    margin-top: 40px;
+    opacity:0;}	
+
+.applicationL {max-height:90vh;
+		width: auto;
+	    margin-top: 40px;
+   	    -webkit-transform: translate(-200vw, 0);
+	    opacity:0;}		
+
+.right-image-arrived {
+		-webkit-transform: translate(0,0);
+	    -webkit-transition: transform 2s ease-out; 
+		opacity:1;}
+		
+.left-image-arrived {
+		-webkit-transform: translate(0,0);
+	    -webkit-transition: transform 2s ease-out; 
+	    opacity:1;}	
+			
+	
+#stackL { float:left; width:46%;
+	padding-right: 40px;
+	padding-bottom: 60px;}
+
+#stackR { float:left; width:46%;
+	padding-bottom: 60px;}
+	
+#stackL2 { float:left; width:33%;
+	padding-right: 38px;
+	padding-bottom: 60px;}
+
+#stackR2 { float:left; width:60%;
+	padding-bottom: 60px;}
+		
+	
+.fullapp {clear:both;
+	width: 96%;}	
+
+	#credit h4 {line-height:1.5em;}
+
+
+/*---------------------------------------------------------MEDIA-QUERIES--------------------------------------------------------------*/
+
+@media only screen and (min-width: 1600px)  { 
+	#restofLogo	{min-height: 180vh;}
+}
+	 	 
+@media only screen and (max-width: 1200px)  { 
+	#sidebar {width:23%;} 
+	.site-container {width:77%;}
+	
+	.left-text {width:40%;}	
+	  
+	.right-image {width:70%;}
+
+
+}
+		
+@media only screen and (max-width: 1300px)  { 
+	.container {width:90%;}	}
+
+@media only screen and (max-width: 900px), (max-device-width: 900px)  { 
+	header {display: block; position: fixed;  z-index:10000000000000;}
+	.bar {position: relative;}
+	.menu {position: absolute; top:50px}
+	#sidebar {display: none; }
+	.site-container {width:100%;}
+	.container, .container2 {width:80%; position: relative;} 
+	.page-long {padding-bottom: 100px;}
+	
+@media only screen and (max-width: 800px), (max-device-width: 800px)  { 
+	#page1 {padding-bottom:0vh;
+	}
+	.right-image {clear:both;
+		width:100%;
+		margin-right: -10px;
+		margin-top: -80px;
+	  	position: relative;
+		}
+						  
+	.left-text {clear:both;
+	 	 width:80%;
+	 	 position:relative;
+	 	 margin-left: 20%;}		
+	
+	.left-image {clear:both;
+		width:90%;
+		margin-left: -10px;
+		margin-top: -80px;
+	  	position: relative;
+		}
+						  
+	.right-text {clear:both;
+	 	 width:80%;
+	 	 position:relative;
+ 	 	 margin-top: 120px;
+	 	 margin-left: 20%;
+	 	 margin-right: 5%;
+    	 opacity:0; }	
+		 
+		 
+	.left-text-arrived, .left-image-arrived {
+		-webkit-transform: translate(0,0);
+	    -webkit-transition: transform 2s ease-out; 
+	    opacity:1;}
+
+	.right-text-arrived, .right-image-arrived {
+		-webkit-transform: translate(0,0);
+	    -webkit-transition: transform 2s ease-out; 
+		opacity:1;}
+ 
+		
+	.container {min-height: 400px}
+	
+	h2 { font-size: 35px;}
+	
+	.icongrid { padding: 10px;}
+	 
+	.columns3 {	width: 40%; }
+	
+	.columns2 {width: 40%; padding-left:10%; }
+
+	.columns4 { width: 40%; padding-left:10%; }
+
+
+	.columns5, .columns7 {clear: both; 
+		padding-left: 0%;
+		width: 80%;
+	 	margin: 50px 10% 0 5%;}	
+			
+	.full-image	{width:100%;}
+		
+}
+
+
+
+@media only screen and (max-device-width: 1024px) { 
+	.caption {display: none;}
+	.hovertext {display: block;}	}
+	
+
+@media only screen and (max-width: 700px), (max-device-width: 700px)  { 
+.caption {display: none;}
+.hovertext {display: block;}	
+.bubble-holder {clear: left;}
+
+.label	{display: none;}	
+
+.bubbles-container {
+	width:100px;
+	margin-left: 27%;
+	margin-right: 27%;
+	display: block;
+	text-align: center;
+	padding-top: 18vh;
+	opacity: 0;}
+
+.icon {padding-left:38px;
+	padding-top:10px;}
+
+
+.bubbles-container-arrived{
+	opacity: 1;
+	-webkit-transition: opacity 3s ease;} 
+
+#page4 {min-height: 100vh;}
+
+.FLOATright-text {clear:both;
+ 	 width:80%;
+ 	 position:relative;
+ 	 margin: 50px 10% 0 10%;
+	 opacity:0; }
+	 
+.smallLeftImage	{clear:both;
+ 	 width:50%;
+ 	 position:relative;
+	 padding-left: 0%;
+ 	 margin: 70px 25% 0 25%;} 	
+
+.columns {clear: both; 
+ 	padding-left: 0%;
+ 	width: 80%;
+	 margin: 50px 10% 0 10%;}	
+
+.lillogo2 { padding: 45px 0 0 0 ;}
+		
+.right-text-arrived {
+ 	-webkit-transform: translate(0,0);
+     -webkit-transition: transform 2s ease-out; 
+ 	opacity:1;}
+
+#pageRespLogo {min-height: 120vh;} 
+
+
+.full-image	{padding:35px 0px 35px 0;}	
+
+#restofLogo	{min-height: 3200px}
+
+
+
+
+#stackL, #stackL2, #stackR, #stackR2 {clear:both;
+	width: 96%; }
+
+#stackL { padding-right: 0px;
+	padding-bottom: 0px;}
+	
+#stackL2 {
+	padding-right: 0px;
+	padding-bottom: 0px;}
+
+#stackR2 {
+	padding-bottom: 60px;}
+
+}
+
+
+@media only screen and (max-width: 600px), (max-device-width: 600px)  { 
+.columns3, .columns4 {width: 60%; padding-left:5%;}
+#pageType {padding-bottom: 50px;}
+
+#restofLogo	{min-height: 2700px}
+
+
+.container {padding-bottom: 30px;}
+	
+}
+
+		
